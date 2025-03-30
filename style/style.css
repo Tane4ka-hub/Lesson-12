@@ -28,6 +28,12 @@
     font-weight: 700;
 }
 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -94,10 +100,9 @@ h1 {
     font-weight: 900;
     line-height: 1;
     margin: 0;
-    
 }
 
-span {
+.planet {
     color: #46A358;
     font-family: 'Cera Pro Bold', sans-serif;
     font-size: 70px;
@@ -153,8 +158,9 @@ span {
     left: 50%;
     transform: translateX(-50%);
     display: none;
-    margin-top: 30px;
+    margin-top: 15px;
     min-width: 188px;
+    padding-top: 15px;
 }
 
 .list-item:hover > ul {
@@ -174,7 +180,6 @@ span {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 .sub-list-item-active > a {
@@ -195,8 +200,8 @@ span {
 .sub-list-item-active:hover > ul {
     display: block;
     left: 150%;
-    margin-top: -72%;
-    margin-left: 2px;
+    margin-top: -76%;
+    padding-left: 10px;
 }
 
 .sub-sublist-item > a {
@@ -240,11 +245,10 @@ span {
     font-size: 15px;
     font-weight: 700;
     line-height: 40px; 
-    
 }
 
 .menu-list {
-    padding: 7px 185px 377px 30px;
+    padding: 7px 24px 0 30px;
 }
 
 .icon-item {
@@ -287,6 +291,16 @@ h2 {
     line-height: 16px;
     padding: 14px 199px 0 18px;
 }
+
+h9 {
+    color: #3D3D3D;
+    font-family: 'Cera Pro Bold',sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; /* 88.889% */
+}
+
 .gallery {
     margin: 46px 120px;
 }
@@ -376,10 +390,14 @@ h2 {
     justify-content: space-between;
     gap: 26px;
     opacity: 0;
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .flex-item:hover .icon3 {
     opacity: 1;
+    transform: translateX(0);
 }
 .flex-item:hover {
     border-color: #46A358;
@@ -399,6 +417,8 @@ h2 {
     line-height: 16px; /* 100% */
     border: 1px solid #46A358;
     opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .font3 {
@@ -415,6 +435,9 @@ h2 {
 }
 .flex-item:hover .discount {
     opacity: 1;
+   
+    transform: scale(1);
+    animation: pulse 0.6s infinite alternate ease-in-out;
 }
 
 .flex-item:hover > span {
@@ -459,7 +482,6 @@ h4 {
     text-transform: uppercase;
     padding: 0 0 9px 70px;
 }
-
 
 .cta {
     padding: 11px 27px;
@@ -756,3 +778,61 @@ p {
 .media {
     display: block;
 }
+
+.sorting {
+    padding: 36px 24px 19px 30px;
+    display: inline-block;
+    background: #FBFBFB;
+    color: #3D3D3D;
+    font-family: 'Cera Pro Regular', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 266.667% */
+}
+
+.menu-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-list li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta2 {
+    padding: 8px 25px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 6px;
+    background-color: #46A358;
+    border: none;
+    font-family: 'Cera Pro Bold', sans-serif;
+    margin: 0 0 0 auto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 125% */
+    margin: 16px 190px 46px 0;
+}
+
+.text5 {
+    color: #46A358;
+    font-family: 'Cera Pro Regular',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.price {
+    color: #3D3D3D;
+    font-family: 'Cera Pro Regular',sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 106.667% */
+}
+
