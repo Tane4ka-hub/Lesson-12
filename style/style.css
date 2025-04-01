@@ -239,16 +239,44 @@ h1 {
     line-height: 16px; /* 106.667% */
 }
 
-.menu-item.active-item {
-    color: #46A358;
-    font-family: 'Cera Pro Bold', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 40px; 
-}
-
 .menu-list {
     padding: 7px 24px 0 30px;
+}
+
+.menu-item input {
+    display: none;
+}
+
+.menu-item label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu-item:hover label {
+    color: #46A358;
+}
+
+.menu-item input:checked + label {
+    color: #46A358;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+
+input[type="checkbox"]:checked + label {
+    color:  #46A358;
+}
+
+label:hover {
+    color: #46A358;
+}
+
+label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
 
 .icon-item {
@@ -789,16 +817,6 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 40px; /* 266.667% */
-}
-
-.menu-list li {
-    display: flex;
-    justify-content: space-between;
-}
-
-.category-list li {
-    display: flex;
-    justify-content: space-between;
 }
 
 .cta2 {

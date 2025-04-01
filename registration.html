@@ -8,6 +8,17 @@
         <link rel="stylesheet" href="css/registrationstyle.css">
     </head>
     <body>
+        <div class="preloader-wrapper">
+            <div class="preloader"></div>
+        </div>
+
+        <script>
+            setTimeout(() => {
+                document.querySelector('.preloader-wrapper').style.display = 'none';
+                document.querySelector('.conteiner').style.display = 'block';
+            }, 2000);
+        </script>
+    
         <div class="container">
             <div class="header">
                 <h1 id="test">Login</h1> 
