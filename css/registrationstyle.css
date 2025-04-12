@@ -187,3 +187,173 @@ img {
     height: 15px;
 }
 
+@media (min-width: 2560px) {
+    h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        line-height: 36px; 
+        margin: 0 10px 0 12px;
+    
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 36px; 
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 20px; 
+    }
+    
+    .wrapper {
+        margin: 0 0 20px;
+    }
+    
+    .register {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 12px;
+    }
+    
+    .input {
+        width: 340px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    
+    .text {
+        font-size: 18px;
+        line-height: 20px; 
+    }
+    
+    .submit-btn {
+        width: 340px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 20px; 
+        margin: 30px 0 36px;
+    }
+    
+    .button-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        border: 1px solid #EAEAEA;
+        margin: 7px;
+        
+    }
+    
+    svg {
+        margin-right: 10px; 
+    }
+    
+    .btn {
+        font-size: 16px;
+        line-height: 18px;
+        border-radius: 5px;
+        width: 340px;
+    }
+    
+    img {
+        height: 1px;
+        width: 100px;
+    }
+    
+    .icon {
+        width: 13px;
+        height: 15px;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 16px; 
+    }
+    
+    h2 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 16px; 
+        margin: 0 10px 0 12px;
+    }
+    
+    h3 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 16px; 
+    }
+    
+    p {
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+    }
+   
+    .wrapper {
+        margin: 0 0 16px;
+    }
+    
+    .register {
+        margin: 0 0 12px;
+    }
+    
+    .input {
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+    }
+    
+    .text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px; 
+    }
+    
+    .submit-btn {
+        width: 250px;
+        height: 35px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px; 
+        margin: 30px 0 25px;
+    }
+    
+    .button-item {
+        margin: 7px;   
+    }
+    
+    svg {
+        margin-right: 8px; 
+    }
+    
+    .btn {
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 123.077% */
+        border-radius: 5px;
+        border: 1px solid #EAEAEA;
+        width: 250px;
+    }  
+    
+    img {
+        height: 1px;
+    
+    }
+    
+    .icon {
+        width: 11px;
+        height: 13px;
+    }
+}
